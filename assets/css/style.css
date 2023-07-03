@@ -23,7 +23,6 @@ body{
 
 .row{
     display: flex;
-    justify-content: center;
 }
 
 .col{
@@ -39,7 +38,7 @@ header .col{
     height: 50px;
 }
 
-.col_2{
+.col_header{
     background-color: orange;
     border: 2px solid black;
 }
@@ -49,12 +48,38 @@ header .col{
     height: 200px;
 }
 
+main .col {
+    height: 300px;
+    background-color: red;
+}
+
+main .container{
+    background-color: orange;
+    margin-bottom: 10rem;
+}
+
+.col_3{
+    background-color: red;
+    border: 2px solid black;
+}
+
+.text{
+    background-color: deeppink;
+    height: 90%;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+.big_container{
+    background-color: orange;
+}
+
 
 /* #endregion */
 
 /* #region Header */
 
-.col_2{
+.col_header{
 width: 50%;
 }
 
@@ -66,3 +91,32 @@ width: 50%;
     width: 50%;
     margin: 3rem;
 }
+
+header .row{
+    justify-content: center;
+}
+
+/* #endregion */
+
+/* #region Main*/
+
+main .row{
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.col_3 {
+    width: 75%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.big_container{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    margin-top: 20rem;
+}
+/* #endregion */
